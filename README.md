@@ -32,6 +32,8 @@
 ```bash
 # Αντικατέστησε το YOUR_USERNAME με το username σου ή κάνε build το image τοπικά
 docker run -p 8080:80 christoskataxenos/voithos-spoudon-eap
+``` 
+
 Μετά άνοιξε τον browser σου στο: http://localhost:8080
 
 Επιλογή 2: Τοπικά (Για απλούς θνητούς)
