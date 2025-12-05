@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Βοηθός Σπουδών ΕΑΠ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <!-- Main Form Container -->
+    <main class="container" id="form-container">
+        <header class="form-header fade-in">
+            <div class="logo-area">
+                <span class="logo-icon">🎓</span>
+                <div class="logo-text">
+                    <h1>Βοηθός Σπουδών ΕΑΠ</h1>
+                    <span class="logo-sub">Πρόγραμμα Σπουδών Πληροφορικής</span>
+                </div>
+            </div>
+            <h2 class="form-title">Δημιούργησε την ιδανική εντολή για τον AI καθηγητή σου</h2>
+        </header>
+
+        <!-- Progress Bar -->
+        <div class="progress-wrapper fade-in delay-1">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Start Step -->
+        <div class="step active" id="step-0" data-step="0">
+            <div class="welcome-card">
+                <p class="subtitle">Οργάνωσε τη μελέτη σου στο Ελληνικό Ανοικτό Πανεπιστήμιο με τη βοήθεια της Τεχνητής
+                    Νοημοσύνης.</p>
+                <!-- Location detected -->
+                <div
+                    style="background:rgba(74, 222, 128, 0.1); border:1px solid rgba(74, 222, 128, 0.2); border-radius:8px; padding:1rem; margin-bottom:1.5rem;">
+                    <p style="font-size:0.9rem; color:#4ade80; margin-bottom:0.5rem;">✅ Εντοπίστηκε Βιβλιοθήκη</p>
+                    <p style="font-size:0.8rem; color:var(--text-muted);">Υλικό μαθημάτων: <code
+                            style="color:white">\EAΠ\</code></p>
+                    <p style="font-size:0.8rem; color:var(--text-muted);">Μην ξεχάσεις να επισυνάψεις τα σχετικά PDF
+                        όταν χρησιμοποιήσεις την εντολή!</p>
+                </div>
+                <button class="btn-primary large" onclick="nextStep()">Έναρξη Συνεδρίας <span
+                        class="arrow">→</span></button>
+            </div>
+        </div>
+
+        <!-- Question 1: Module (Full List) -->
+        <div class="step" id="step-1" data-step="1">
+            <div class="question-header">
+                <span class="q-num">1.</span>
+                <h3>Σε ποια Ενότητα αναφέρεσαι;</h3>
+            </div>
+            <div class="options-list grid-2-col">
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ10')"><span class="key">10</span> ΠΛΗ10 -
+                    Εισαγωγή στην Πληροφορική</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ11')"><span class="key">11</span> ΠΛΗ11 - Αρχές
+                    Τεχνολογίας Λογισμικού</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ12')"><span class="key">12</span> ΠΛΗ12 -
+                    Μαθηματικά Πληροφορικής</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ20')"><span class="key">20</span> ΠΛΗ20 - Δομές
+                    Δεδομένων & Αλγόριθμοι</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ21')"><span class="key">21</span> ΠΛΗ21 -
+                    Ψηφιακά Συστήματα</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ22')"><span class="key">22</span> ΠΛΗ22 -
+                    Δίκτυα Υπολογιστών</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ23')"><span class="key">23</span> ΠΛΗ23 -
+                    Τηλεματική</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ24')"><span class="key">24</span> ΠΛΗ24 -
+                    Σχεδιασμός Λογισμικού</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ30')"><span class="key">30</span> ΠΛΗ30 -
+                    Θεμελιώσεις Πληροφορικής</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ31')"><span class="key">31</span> ΠΛΗ31 -
+                    Τεχνητή Νοημοσύνη</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ32')"><span class="key">32</span> ΠΛΗ32 -
+                    Προγραμματισμός Συστημάτων</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ35')"><span class="key">35</span> ΠΛΗ35 -
+                    Ασφάλεια Συστημάτων</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ36')"><span class="key">36</span> ΠΛΗ36 -
+                    Πληροφοριακά Συστήματα</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ37')"><span class="key">37</span> ΠΛΗ37 -
+                    Πληροφορική στην Εκπαίδευση</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ42')"><span class="key">42</span> ΠΛΗ42 -
+                    Ειδικά Θέματα Τεχνολογίας Λογισμικού</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗ47')"><span class="key">47</span> ΠΛΗ47 -
+                    Γραφικά Υπολογιστών</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗΠΡΟ')"><span class="key">Π</span> ΠΛΗΠΡΟ -
+                    Προχωρημένα Θέματα</button>
+                <button class="option-item" onclick="selectOption(1, 'ΠΛΗΨΙ')"><span class="key">Ψ</span> ΠΛΗΨΙ -
+                    Ψηφιακή Επεξεργασία Σήματος</button>
+            </div>
+            <div class="nav-area"><button class="btn-back" onclick="prevStep()">Πίσω</button></div>
+        </div>
+
+        <!-- Question 2: Study Phase -->
+        <div class="step" id="step-2" data-step="2">
+            <div class="question-header">
+                <span class="q-num">2.</span>
+                <h3>Τι δουλεύεις αυτή την περίοδο;</h3>
+            </div>
+            <div class="options-list">
+                <button class="option-item" onclick="selectOption(2, 'Γραπτή Εργασία Εξαμήνου')"><span
+                        class="key">A</span> 📝 Γραπτή Εργασία Εξαμήνου</button>
+                <button class="option-item" onclick="selectOption(2, 'Προετοιμασία για Τελικές Εξετάσεις')"><span
+                        class="key">B</span> 📚 Προετοιμασία για Τελικές Εξετάσεις</button>
+                <button class="option-item" onclick="selectOption(2, 'Άσκηση Προγραμματισμού / Εργαστήριο')"><span
+                        class="key">C</span> 🔬 Άσκηση Προγραμματισμού / Εργαστήριο</button>
+                <button class="option-item" onclick="selectOption(2, 'Διπλωματική Εργασία')"><span class="key">D</span>
+                    🎓 Διπλωματική Εργασία</button>
+                <button class="option-item" onclick="selectOption(2, 'Κατανόηση Δύσκολης Έννοιας')"><span
+                        class="key">E</span> 🧩 Κατανόηση Δύσκολης Έννοιας</button>
+            </div>
+            <div class="nav-area"><button class="btn-back" onclick="prevStep()">Πίσω</button></div>
+        </div>
+
+        <!-- Question 3: Depth -->
+        <div class="step" id="step-3" data-step="3">
+            <div class="question-header">
+                <span class="q-num">3.</span>
+                <h3>Σε τι βάθος θες να εμβαθύνεις;</h3>
+            </div>
+            <div class="options-list">
+                <button class="option-item" onclick="selectOption(3, 'Απλή Επεξήγηση (ELI5)')"><span
+                        class="key">A</span> 🟢 Απλή Επεξήγηση (ELI5)</button>
+                <button class="option-item" onclick="selectOption(3, 'Προπτυχιακό Επίπεδο (Standard)')"><span
+                        class="key">B</span> 🟡 Προπτυχιακό Επίπεδο (Standard)</button>
+                <button class="option-item" onclick="selectOption(3, 'Προχωρημένο / Master Level')"><span
+                        class="key">C</span> 🔵 Προχωρημένο / Master Level</button>
+            </div>
+            <div class="nav-area"><button class="btn-back" onclick="prevStep()">Πίσω</button></div>
+        </div>
+
+        <!-- Question 4: Output Style -->
+        <div class="step" id="step-4" data-step="4">
+            <div class="question-header">
+                <span class="q-num">4.</span>
+                <h3>Πώς μαθαίνεις καλύτερα;</h3>
+            </div>
+            <div class="options-list">
+                <button class="option-item" onclick="selectOption(4, 'Κώδικας με Σχόλια & Επεξήγηση')"><span
+                        class="key">A</span> ⌨️ Κώδικας με Σχόλια & Επεξήγηση</button>
+                <button class="option-item" onclick="selectOption(4, 'Βήμα-προς-Βήμα Οδηγός Μελέτης')"><span
+                        class="key">B</span> 📝 Βήμα-προς-Βήμα Οδηγός Μελέτης</button>
+                <button class="option-item" onclick="selectOption(4, 'Θεωρία & Μαθηματικές Αποδείξεις')"><span
+                        class="key">C</span> 📖 Θεωρία & Μαθηματικές Αποδείξεις</button>
+                <button class="option-item" onclick="selectOption(4, 'Quiz & Ερωτήσεις Κατανόησης')"><span
+                        class="key">D</span> ❓ Quiz & Ερωτήσεις Κατανόησης</button>
+            </div>
+            <div class="nav-area"><button class="btn-back" onclick="prevStep()">Πίσω</button></div>
+        </div>
+
+        <!-- Question 5: Persona -->
+        <div class="step" id="step-5" data-step="5">
+            <div class="question-header">
+                <span class="q-num">5.</span>
+                <h3>Ποιο στυλ διδασκαλίας προτιμάς;</h3>
+            </div>
+            <div class="options-list">
+                <button class="option-item" onclick="selectOption(5, 'Υπομονετικός Βοηθός (Αναλυτικός)')"><span
+                        class="key">A</span> 🧑‍🏫 Υπομονετικός Βοηθός (Αναλυτικός)</button>
+                <button class="option-item" onclick="selectOption(5, 'Αυστηρός Καθηγητής (Ακαδημαϊκός)')"><span
+                        class="key">B</span> 🎓 Αυστηρός Καθηγητής (Ακαδημαϊκός)</button>
+                <button class="option-item" onclick="selectOption(5, 'Senior Developer (Πρακτικός)')"><span
+                        class="key">C</span> 👨‍💻 Senior Developer (Πρακτικός)</button>
+            </div>
+            <div class="nav-area"><button class="btn-back" onclick="prevStep()">Πίσω</button></div>
+        </div>
+
+        <!-- Question 6: specific detail (Text Input) -->
+        <div class="step" id="step-6" data-step="6">
+            <div class="question-header">
+                <span class="q-num">6.</span>
+                <h3>Έχεις κάποια συγκεκριμένη απορία;</h3>
+                <p style="color:var(--text-muted); font-size:0.95rem; margin-top:0.5rem;">Π.χ. "Δεν καταλαβαίνω πώς
+                    δουλεύουν τα def στην Python" ή "Κόλλησα στην Άσκηση 2".</p>
+            </div>
+
+            <div class="input-area">
+                <textarea id="user-question" placeholder="Γράψε εδώ την ερώτησή σου..."
+                    style="width:100%; height:120px; background:rgba(0,0,0,0.3); border:1px solid var(--card-border); border-radius:12px; padding:1rem; color:white; font-family:inherit; font-size:1rem; resize:none;"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="nav-area" style="margin-top:2rem;">
+                <button class="btn-back" onclick="prevStep()">Πίσω</button>
+                <button class="btn-primary" onclick="generatePrompt()">Δημιουργία Εντολής <span
+                        class="arrow">→</span></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Prompt Result Container -->
+    <div id="result-container" style="display: none; padding: 2rem; max-width: 900px; margin: 0 auto;">
+        <div class="result-header">
+            <h2>🎓 Η Εντολή σου είναι έτοιμη</h2>
+            <p style="color:var(--text-muted); margin-top:0.5rem;">Αντίγραψέ την και επικόλλησέ την στο Google AI
+                Studio.</p>
+        </div>
+
+        <div class="prompt-display-box">
+            <pre id="final-prompt-text"></pre>
+        </div>
+
+        <div class="result-actions">
+            <button class="btn-primary large" onclick="copyFinalPrompt()">Αντιγραφή</button>
+            <button class="btn-secondary large" onclick="location.reload()">Νέα Συνεδρία</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
