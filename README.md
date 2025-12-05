@@ -34,10 +34,10 @@ docker build -t voithos-spoudon-eap .
 docker run -p 8080:80 voithos-spoudon-eap
 ```
 
-Εάν έχεις ήδη ανεβάσει το image στο Docker Hub, αντικατάστησε το `YOUR_USERNAME` με το δικό σου Docker Hub username:
+Εναλλακτικά, μπορείς να κατεβάσεις και να τρέξεις το έτοιμο image απευθείας από το Docker Hub:
 
 ```bash
-docker run -p 8080:80 YOUR_USERNAME/voithos-spoudon-eap
+docker run -p 8080:80 christosk89/voithos-spoudon-eap
 ```
 
 Μετά άνοιξε τον browser σου στο: [http://localhost:8080](http://localhost:8080)
