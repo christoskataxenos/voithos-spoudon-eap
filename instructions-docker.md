@@ -12,6 +12,8 @@
 
 📥 **[Download Docker Desktop](https://www.docker.com/products/docker-desktop)**
 
+🔗 **[View on Docker Hub](https://hub.docker.com/r/christosk89/voithos-spoudon-eap)**
+
 > 💡 **Tip:** Αφού το εγκαταστήσεις, βεβαιώσου ότι το **τρέχεις** (να φαίνεται το εικονίδιο του φαλαινόψαρου κάτω δεξιά ή πάνω στη μπάρα).
 
 ---

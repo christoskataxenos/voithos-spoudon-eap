@@ -1,7 +1,7 @@
 # 🎓 Βοηθός Σπουδών ΕΑΠ (Voithos-Spoudon-EAP)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Docker](https://img.shields.io/badge/docker-ready-green)
+[![Docker](https://img.shields.io/badge/docker-ready-green)](https://hub.docker.com/r/christosk89/voithos-spoudon-eap)
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Made for](https://img.shields.io/badge/School-EAP-orange)
 
@@ -39,6 +39,7 @@ docker run -p 8080:80 voithos-spoudon-eap
 ```bash
 docker run -p 8080:80 christosk89/voithos-spoudon-eap
 ```
+(Δείτε το στο [Docker Hub](https://hub.docker.com/r/christosk89/voithos-spoudon-eap))
 
 Μετά άνοιξε τον browser σου στο: [http://localhost:8080](http://localhost:8080)
 
