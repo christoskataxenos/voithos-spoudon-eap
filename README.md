@@ -4,8 +4,7 @@
 
 Αυτό το εργαλείο σε βοηθάει να δημιουργήσεις **τέλειες εντολές (prompts)** για το ChatGPT / Google Gemini, ώστε να λειτουργούν ως ο προσωπικός σου καθηγητής.
 
-![Preview](https://raw.githubusercontent.com/YOUR_USERNAME/Voithos-Spoudon-EAP/main/preview.png)
-*(Μπορείς να προσθέσεις ένα screenshot εδώ)*
+![Preview]<blockquote class="imgur-embed-pub" lang="en" data-id="a/RZ5BD6r" data-context="false" ><a href="//imgur.com/a/RZ5BD6r"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## ✨ Χαρακτηριστικά
 
