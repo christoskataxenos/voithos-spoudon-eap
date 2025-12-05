@@ -4,8 +4,7 @@
 
 Αυτό το εργαλείο σε βοηθάει να δημιουργήσεις **τέλειες εντολές (prompts)** για το ChatGPT / Google Gemini, ώστε να λειτουργούν ως ο προσωπικός σου καθηγητής.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/RZ5BD6r" data-context="false" ><a href="//imgur.com/a/RZ5BD6r"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
+![Screenshot από την υλοποίηση](https://i.imgur.com/H5yBf4Z.png)
 ## ✨ Χαρακτηριστικά
 
 *   **19 Ενότητες**: Υποστήριξη για όλα τα μαθήματα Πληροφορικής (ΠΛΗ10 - ΠΛΗΨΙ).
